@@ -25,59 +25,40 @@ const TimerText = styled.text`
     }
 `;
 
-const FooterContainer = styled.div`
-    display: flex;
-    width: 100%;
-    height: 80px;
-    border-top: 1px solid;
-    border-top-color: white;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-
-    @media screen and (max-width: 768px) {
-        flex: 1;
-        height: 60px;
-    }
-`;
-
-const FooterText = styled.text`
-    color: "white";
-`;
-
 const MainPresenter = ({ time, error }) => (
-    <Container>
-        <TimerContainer>
-            <TimerText>
-                {time !== 0 ? (
-                    <Timer
-                        initialTime={time}
-                        direction="backward"
-                        formatValue={value =>
-                            `${value < 10 ? `0${value}` : value}:`
-                        }
-                    >
-                        {() => (
-                            <>
-                                <Timer.Days />
-                                <Timer.Hours />
-                                <Timer.Minutes />
-                                <Timer.Seconds
-                                    formatValue={value =>
-                                        `${value < 10 ? `0${value}` : value}`
-                                    }
-                                />
-                            </>
-                        )}
-                    </Timer>
-                ) : null}
-            </TimerText>
-        </TimerContainer>
-        <FooterContainer>
-            <FooterText>Copyright</FooterText>
-        </FooterContainer>
-    </Container>
+    <>
+        <Container>
+            <TimerContainer>
+                <TimerText>
+                    {time !== 0 ? (
+                        <Timer
+                            initialTime={time}
+                            direction="backward"
+                            formatValue={value =>
+                                `${value < 10 ? `0${value}` : value}:`
+                            }
+                        >
+                            {() => (
+                                <>
+                                    <Timer.Days />
+                                    <Timer.Hours />
+                                    <Timer.Minutes />
+                                    <Timer.Seconds
+                                        formatValue={value =>
+                                            `${
+                                                value < 10 ? `0${value}` : value
+                                            }`
+                                        }
+                                    />
+                                </>
+                            )}
+                        </Timer>
+                    ) : null}
+                </TimerText>
+            </TimerContainer>
+        </Container>
+        <Container></Container>
+    </>
 );
 
 MainPresenter.propTypes = {

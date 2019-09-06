@@ -71,13 +71,13 @@ export default () => (
         </HeaderTitleContainer>
         <NavContainer>
             <NavItem to="#">
-                <NavItemText>Menu 1</NavItemText>
+                <NavItemText>라인업</NavItemText>
             </NavItem>
             <NavItem to="#">
-                <NavItemText>Menu 2</NavItemText>
+                <NavItemText>교통수단</NavItemText>
             </NavItem>
             <NavItem to="#">
-                <NavItemText>Menu 3</NavItemText>
+                <NavItemText>위치</NavItemText>
             </NavItem>
         </NavContainer>
     </HeaderContainer>
