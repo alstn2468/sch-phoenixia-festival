@@ -1,0 +1,11 @@
+export const BACKGROUND_COLOR = "#000000";
+export const BACKGROUND_COLOR_900 = "#263238";
+export const BACKGROUND_COLOR_800 = "#37474F";
+export const BACKGROUND_COLOR_700 = "#455A64";
+export const BACKGROUND_COLOR_600 = "#546E7A";
+export const TINT_COLOR = "#FFFFFF";
+export const SCH_LOGO_COLOR_ONE = "#AAD047";
+export const SCH_LOGO_COLOR_TWO = "#007A85";
+export const SCH_LOGO_COLOR_THR = "#1BBCF0";
+export const ACTIVE_COLOR = "#FFFFFF";
+export const DEACTIVE_COLOR = "#000000";
