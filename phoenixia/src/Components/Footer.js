@@ -20,7 +20,11 @@ const FooterContainer = styled.div`
 
 const FooterText = styled.text`
     color: #9e9e9e;
-    font-size: 12px;
+    font-size: 14px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
 `;
 
 export default () => (

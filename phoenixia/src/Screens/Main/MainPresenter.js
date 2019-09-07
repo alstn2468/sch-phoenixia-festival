@@ -12,11 +12,17 @@ const Container = styled.div`
 
 const TimerContainer = styled.div`
     border: 1px solid white;
-    padding: 20px 30px;
+    padding: 25px 30px 10px 30px;
     border-radius: 20px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
+
+    @media screen and (max-width: 768px) {
+        padding: 15px 30px 10px 30px;
+    }
 `;
 
-const TimerText = styled.text`
+const TimerText = styled.div`
     font-size: 100px;
     font-family: "Aldrich", sans-serif;
 
@@ -25,8 +31,18 @@ const TimerText = styled.text`
     }
 `;
 
+const FireWorksContainer = styled.canvas`
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+
+    background-color: rgba(0, 0, 0, 0);
+`;
+
 const MainPresenter = ({ time, error }) => (
     <>
+        <FireWorksContainer id="canvas" />
         <Container>
             <TimerContainer>
                 <TimerText>

@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { TINT_COLOR, SCH_LOGO_COLOR_THR } from "../Constants/Colors";
+import {
+    TINT_COLOR,
+    SCH_LOGO_COLOR_THR,
+    SCH_LOGO_COLOR_ONE,
+    SCH_LOGO_COLOR_TWO
+} from "../Constants/Colors";
 
 const HeaderContainer = styled.header`
     width: 100%;
@@ -14,6 +19,7 @@ const HeaderContainer = styled.header`
     margin-bottom: 10px;
     position: fixed;
     top: 0;
+    z-index: 1;
 
     @media screen and (max-width: 768px) {
         flex: 1;
@@ -24,19 +30,23 @@ const HeaderContainer = styled.header`
 const HeaderTitleContainer = styled.div`
     display: flexbox;
     flex: 3;
+    padding-left: 40px;
 
     @media screen and (max-width: 768px) {
         flex: 1;
+        padding-left: 10px;
     }
 `;
 
 const HeaderTitleText = styled.text`
     font-size: 24px;
-    padding-left: 40px;
+    font-weight: 800;
+    background-color: ${props => props.color};
+    padding: 10px;
 
     @media screen and (max-width: 768px) {
         font-size: 16px;
-        padding-left: 10px;
+        padding: 5px;
     }
 `;
 
@@ -52,6 +62,7 @@ const NavItem = styled(Link)`
 `;
 
 const NavItemText = styled.text`
+    font-size: 18px;
     :visited {
         color: ${TINT_COLOR};
     }
@@ -60,14 +71,18 @@ const NavItemText = styled.text`
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 10px;
+        font-size: 12px;
     }
 `;
 
 export default () => (
     <HeaderContainer>
         <HeaderTitleContainer>
-            <HeaderTitleText>2019 피닉시아 축제</HeaderTitleText>
+            <HeaderTitleText color={SCH_LOGO_COLOR_ONE}>2019</HeaderTitleText>
+            <HeaderTitleText color={SCH_LOGO_COLOR_TWO}>
+                피닉시아
+            </HeaderTitleText>
+            <HeaderTitleText color={SCH_LOGO_COLOR_THR}>축제</HeaderTitleText>
         </HeaderTitleContainer>
         <NavContainer>
             <NavItem to="#">
