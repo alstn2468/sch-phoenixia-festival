@@ -19,7 +19,7 @@ const HeaderContainer = styled.header`
     margin-bottom: 10px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 
     @media screen and (max-width: 768px) {
         flex: 1;

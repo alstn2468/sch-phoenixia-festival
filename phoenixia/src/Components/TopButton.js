@@ -1,12 +1,13 @@
 import React from "react";
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
+import { BACKGROUND_COLOR } from "../Constants/Colors";
 
 export default () => (
     <ScrollUpButton
         EasingType="easeInCubic"
         style={{
             fill: "white",
-            backgroundColor: "rgba(0,0,0,0)",
+            backgroundColor: BACKGROUND_COLOR,
             bottom: 120
         }}
     ></ScrollUpButton>
