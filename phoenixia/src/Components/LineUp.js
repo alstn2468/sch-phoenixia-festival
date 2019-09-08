@@ -5,6 +5,8 @@ import {
     SCH_LOGO_COLOR_TWO,
     SCH_LOGO_COLOR_THR
 } from "../Constants/Colors";
+import LineUpDetail from "./LineUpDetail";
+import { BOL4 } from "../Constants/Images";
 
 const LineUpContainer = styled.div`
     display: flex;
@@ -23,7 +25,7 @@ const LineUpContainer = styled.div`
 
 const DayLineUpContainer = styled.div`
     flex: 1;
-    margin: 5px 20px;
+    margin: 5px 30px;
     padding: 10px;
 
     @media screen and (max-width: 768px) {
@@ -56,12 +58,18 @@ const DayText = styled.h2`
 `;
 
 const DetailContainer = styled.div`
-    border: 2px solid ${props => props.color};
+    display: flex;
+    flex-direction: column;
+    border: 3px solid ${props => props.color};
     border-radius: 10px;
-    height: 350px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
         height: 100px;
+        flex-direction: row;
+        border: 2px solid ${props => props.color};
     }
 `;
 
@@ -71,19 +79,28 @@ const LineUp = () => (
             <DayTextContainer color={SCH_LOGO_COLOR_ONE}>
                 <DayText>Day 1</DayText>
             </DayTextContainer>
-            <DetailContainer color={SCH_LOGO_COLOR_ONE}></DetailContainer>
+            <DetailContainer color={SCH_LOGO_COLOR_ONE}>
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+            </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
             <DayTextContainer color={SCH_LOGO_COLOR_TWO}>
                 <DayText>Day 2</DayText>
             </DayTextContainer>
-            <DetailContainer color={SCH_LOGO_COLOR_TWO}></DetailContainer>
+            <DetailContainer color={SCH_LOGO_COLOR_TWO}>
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+            </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
             <DayTextContainer color={SCH_LOGO_COLOR_THR}>
                 <DayText>Day 3</DayText>
             </DayTextContainer>
-            <DetailContainer color={SCH_LOGO_COLOR_THR}></DetailContainer>
+            <DetailContainer color={SCH_LOGO_COLOR_THR}>
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+            </DetailContainer>
         </DayLineUpContainer>
     </LineUpContainer>
 );

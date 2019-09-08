@@ -4,9 +4,6 @@ import { TINT_COLOR, BACKGROUND_COLOR } from "../Constants/Colors";
 
 const globalStyles = createGlobalStyle`
     ${reset};
-    html {
-    scroll-behavior: smooth;
-    }
     * {
         box-sizing: border-box;
         text-decoration: none;

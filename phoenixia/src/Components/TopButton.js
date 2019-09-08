@@ -4,7 +4,6 @@ import { BACKGROUND_COLOR } from "../Constants/Colors";
 
 export default () => (
     <ScrollUpButton
-        EasingType="easeInCubic"
         style={{
             fill: "white",
             backgroundColor: BACKGROUND_COLOR,
