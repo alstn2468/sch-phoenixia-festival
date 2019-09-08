@@ -14,35 +14,55 @@ const LineUpContainer = styled.div`
     align-items: center;
     flex-direction: row;
     z-index: 1;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        height: 76%;
+    }
 `;
 
 const DayLineUpContainer = styled.div`
     flex: 1;
-    height: auto;
     margin: 5px 20px;
     padding: 10px;
+
+    @media screen and (max-width: 768px) {
+        width: 70%;
+        height: 100px;
+        margin: 5px 0px;
+    }
 `;
 
 const DayTextContainer = styled.div`
-    flex: 1;
     margin: 15px 0px;
     padding: 10px;
     border-radius: 10px;
     background-color: ${props => props.color};
+
+    @media screen and (max-width: 768px) {
+        margin: 5px 0px;
+        padding: 5px;
+    }
 `;
 
 const DayText = styled.h2`
     text-align: center;
     font-size: 24px;
     font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
 `;
 
 const DetailContainer = styled.div`
-    flex: 1;
     border: 2px solid ${props => props.color};
     border-radius: 10px;
     height: 350px;
-    padding: 10px;
+
+    @media screen and (max-width: 768px) {
+        height: 100px;
+    }
 `;
 
 const LineUp = () => (
