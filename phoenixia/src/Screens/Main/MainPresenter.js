@@ -40,10 +40,23 @@ const FireWorksContainer = styled.canvas`
     background-color: rgba(0, 0, 0, 0);
 `;
 
+const LineUpContainer = styled.div`
+    flex-direction: row;
+    z-index: 1;
+`;
+
+const TransportationContainer = styled.div`
+    z-index: 1;
+`;
+
+const LocationContainer = styled.div`
+    z-index: 1;
+`;
+
 const MainPresenter = ({ time, error }) => (
     <>
         <FireWorksContainer id="canvas" />
-        <Container>
+        <Container id="timer">
             <TimerContainer>
                 <TimerText>
                     {time !== 0 ? (
@@ -73,7 +86,15 @@ const MainPresenter = ({ time, error }) => (
                 </TimerText>
             </TimerContainer>
         </Container>
-        <Container></Container>
+        <Container id="line-up">
+            <LineUpContainer>Line Up</LineUpContainer>
+        </Container>
+        <Container id="transportation">
+            <TransportationContainer>Transportation</TransportationContainer>
+        </Container>
+        <Container id="location">
+            <LocationContainer>Location</LocationContainer>
+        </Container>
     </>
 );
 
