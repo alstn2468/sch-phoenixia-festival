@@ -15,12 +15,10 @@ const Container = styled.div`
     }
 `;
 
-const DetailImage = styled.div`
+const DetailImage = styled.img`
     border-radius: 10px;
     width: 200px;
     height: 140px;
-    background-size: contain;
-    background-image: url(${props => props.path});
 
     @media screen and (max-width: 768px) {
         width: 70px;
@@ -43,7 +41,7 @@ const DetailContent = styled.div`
 
 const LineUpDetail = ({ path, name }) => (
     <Container>
-        <DetailImage path={path}></DetailImage>
+        <DetailImage src={path} alt="Not Found"></DetailImage>
         <DetailContent>{name}</DetailContent>
     </Container>
 );

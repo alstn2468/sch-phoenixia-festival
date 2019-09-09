@@ -18,7 +18,7 @@ const FooterContainer = styled.div`
     }
 `;
 
-const FooterText = styled.text`
+const FooterText = styled.span`
     color: #9e9e9e;
     font-size: 14px;
 

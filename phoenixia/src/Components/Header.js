@@ -38,7 +38,7 @@ const HeaderTitleContainer = styled.div`
     }
 `;
 
-const HeaderTitleText = styled.text`
+const HeaderTitleText = styled.span`
     font-size: 24px;
     font-weight: 700;
     background-color: ${props => props.color};
@@ -65,7 +65,7 @@ const NavItem = styled(AnchorLink)`
     }
 `;
 
-const NavItemText = styled.text`
+const NavItemText = styled.span`
     font-size: 18px;
     :visited {
         color: ${TINT_COLOR};
