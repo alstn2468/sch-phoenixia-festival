@@ -6,7 +6,7 @@ import {
     SCH_LOGO_COLOR_THR
 } from "../Constants/Colors";
 import LineUpDetail from "./LineUpDetail";
-import { BOL4 } from "../Constants/Images";
+import BOL4 from "../assets/Images/BOL4.jpeg";
 
 const LineUpContainer = styled.div`
     display: flex;

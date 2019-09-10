@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "file-loader": "^4.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
