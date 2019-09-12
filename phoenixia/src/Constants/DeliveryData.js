@@ -4,7 +4,7 @@ export const NearDeliveryData = [
     { name: "마슬랜치킨", number: "041-544-9630" },
     { name: "마슬랜치탕", number: "041-541-8990" },
     { name: "멕켄", number: "041-542-4881" },
-    { name: "미쳡버린파닭", number: "041-532-2522" },
+    { name: "미쳐버린파닭", number: "041-532-2522" },
     { name: "빅원치킨", number: "041-544-0009" },
     { name: "짱닭", number: "041-531-5558" },
     { name: "페리카나", number: "041-542-9998" },

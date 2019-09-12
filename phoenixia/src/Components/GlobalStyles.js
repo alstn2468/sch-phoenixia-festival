@@ -9,7 +9,7 @@ const globalStyles = createGlobalStyle`
         text-decoration: none;
         padding: 0px;
         margin: 0px;
-        font-family: "soonchunhyang";
+        font-family: "soonchunhyang" !important;
         background-color: ${BACKGROUND_COLOR};
         font-weight: 500;
         color: ${TINT_COLOR};

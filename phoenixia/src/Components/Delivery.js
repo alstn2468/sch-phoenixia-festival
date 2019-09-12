@@ -52,6 +52,7 @@ const DetailContainer = styled.div`
     display: flex;
     height: 600px;
     flex-direction: column;
+    align-items: center;
     overflow: auto;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
@@ -67,10 +68,9 @@ const DataContainer = styled.div`
     width: 100%;
     height: 30px;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
     margin: 7px 0px;
+    text-align: center;
 
     @media screen and (max-width: 768px) {
         font-size: 12px;
@@ -79,6 +79,7 @@ const DataContainer = styled.div`
 `;
 
 const NameContainer = styled.div`
+    display: inline-block;
     padding: 5px;
     border: 1px solid white;
     width: 30%;
@@ -92,6 +93,7 @@ const NameContainer = styled.div`
 `;
 
 const NumberContainer = styled.div`
+    display: inline-block;
     border: 1px solid white;
     padding: 5px;
     border-radius: 5px;
