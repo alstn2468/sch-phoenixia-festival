@@ -54,6 +54,10 @@ const DetailContainer = styled.div`
     height: 600px;
     flex-direction: column;
     overflow: auto;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none !important;
+    }
 
     @media screen and (max-width: 768px) {
         height: 180px;
