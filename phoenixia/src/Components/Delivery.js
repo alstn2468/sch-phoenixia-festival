@@ -66,8 +66,7 @@ const DetailContainer = styled.div`
 const DataContainer = styled.div`
     width: 100%;
     height: 30px;
-    flex-direction: row;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     font-size: 20px;
@@ -87,7 +86,7 @@ const NameContainer = styled.div`
     margin-right: 5px;
 
     @media screen and (max-width: 768px) {
-        width: 50%;
+        width: 45%;
         margin-right: 2px;
     }
 `;
@@ -96,10 +95,10 @@ const NumberContainer = styled.div`
     border: 1px solid white;
     padding: 5px;
     border-radius: 5px;
-    width: 60%;
+    width: 50%;
 
     @media screen and (max-width: 768px) {
-        width: 50%;
+        width: 45%;
     }
 `;
 
