@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ba5aff1d533e10b08cfcce0b4e2a487",
+    "revision": "4f7933884e276524a63c82496ccfc08b",
     "url": "/SCH_Phoenixia_Festival/index.html"
   },
   {
-    "revision": "fbba60de05dd7ba0d172",
+    "revision": "6ba01895a81d94fefb53",
     "url": "/SCH_Phoenixia_Festival/static/css/main.7b434d81.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SCH_Phoenixia_Festival/static/js/2.5e69765f.chunk.js"
   },
   {
-    "revision": "fbba60de05dd7ba0d172",
-    "url": "/SCH_Phoenixia_Festival/static/js/main.2c2abb50.chunk.js"
+    "revision": "6ba01895a81d94fefb53",
+    "url": "/SCH_Phoenixia_Festival/static/js/main.18d82eef.chunk.js"
   },
   {
     "revision": "74b5e600afc236af6cd1",
