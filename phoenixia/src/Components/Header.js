@@ -95,8 +95,8 @@ export default () => (
             <NavItem href="#line-up">
                 <NavItemText>라인업</NavItemText>
             </NavItem>
-            <NavItem href="#transportation">
-                <NavItemText>교통수단</NavItemText>
+            <NavItem href="#Delivery">
+                <NavItemText>배달음식</NavItemText>
             </NavItem>
             <NavItem href="#location">
                 <NavItemText>위치</NavItemText>

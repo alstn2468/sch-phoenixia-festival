@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 import { BACKGROUND_COLOR } from "../Constants/Colors";
 
 const TimerContainer = styled.div`
+    z-index: 1;
     border: 1px solid white;
     padding: 25px 30px 10px 30px;
     border-radius: 20px;
-    z-index: 1;
     background-color: ${BACKGROUND_COLOR};
 
     @media screen and (max-width: 768px) {

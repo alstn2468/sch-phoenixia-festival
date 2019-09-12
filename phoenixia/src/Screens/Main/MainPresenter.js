@@ -3,6 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import FestivalTimer from "../../Components/FestivalTimer";
 import LineUp from "../../Components/LineUp";
+import Delivery from "../../Components/Delivery";
 import { BACKGROUND_COLOR } from "../../Constants/Colors";
 
 const Container = styled.div`
@@ -20,10 +21,6 @@ const FireWorksContainer = styled.canvas`
     background-color: ${BACKGROUND_COLOR};
 `;
 
-const TransportationContainer = styled.div`
-    z-index: 1;
-`;
-
 const LocationContainer = styled.div`
     z-index: 1;
 `;
@@ -35,10 +32,10 @@ const MainPresenter = ({ time, error }) => (
             <FestivalTimer time={time} />
         </Container>
         <Container id="line-up">
-            <LineUp></LineUp>
+            <LineUp />
         </Container>
-        <Container id="transportation">
-            <TransportationContainer>Transportation</TransportationContainer>
+        <Container id="Delivery">
+            <Delivery />
         </Container>
         <Container id="location">
             <LocationContainer>Location</LocationContainer>
