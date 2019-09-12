@@ -45,7 +45,7 @@ const HeaderTitleText = styled.span`
     padding: 10px;
 
     @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px;
     }
 `;
@@ -75,7 +75,7 @@ const NavItemText = styled.span`
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 12px;
+        font-size: 10px;
     }
 `;
 
