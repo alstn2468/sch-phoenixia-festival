@@ -20,7 +20,6 @@ const DeliveryContainer = styled.div`
 const DeliveryDetailContainer = styled.div`
     flex: 1;
     margin: 5px 30px;
-    padding: 10px;
 
     @media screen and (max-width: 768px) {
         width: 70%;
@@ -31,11 +30,11 @@ const DeliveryDetailContainer = styled.div`
 
 const TextContainer = styled.div`
     margin: 15px 0px;
-    padding: 10px;
+    padding-bottom: 10px;
 
     @media screen and (max-width: 768px) {
         margin: 5px 0px;
-        padding: 5px;
+        padding-bottom: 5px;
     }
 `;
 
@@ -54,6 +53,7 @@ const DetailContainer = styled.div`
     border-radius: 10px;
     height: 600px;
     flex-direction: column;
+    overflow: auto;
 
     @media screen and (max-width: 768px) {
         height: 180px;
@@ -68,11 +68,11 @@ const DataContainer = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    margin: 7px;
+    margin: 7px 0px;
 
     @media screen and (max-width: 768px) {
         font-size: 12px;
-        margin: 4px;
+        margin: 4px 0x;
     }
 `;
 
