@@ -75,7 +75,7 @@ const DataContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         font-size: 12px;
-        margin: 4px 0x;
+        margin: 4px 0px;
     }
 `;
 
