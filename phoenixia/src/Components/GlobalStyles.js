@@ -13,6 +13,8 @@ const globalStyles = createGlobalStyle`
         background-color: ${BACKGROUND_COLOR};
         font-weight: 500;
         color: ${TINT_COLOR};
+    }
+    div {
         -ms-overflow-style: none;
         &::-webkit-scrollbar { 
             display: none !important;
