@@ -14,12 +14,6 @@ const globalStyles = createGlobalStyle`
         font-weight: 500;
         color: ${TINT_COLOR};
     }
-    div {
-        -ms-overflow-style: none;
-        &::-webkit-scrollbar { 
-            display: none !important;
-        }
-    }
 `;
 
 export default globalStyles;
