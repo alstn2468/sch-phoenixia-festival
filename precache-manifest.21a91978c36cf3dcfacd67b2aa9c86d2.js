@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d55240d7e7cc907e2d27c791aa6f48b",
+    "revision": "e00be886ab0cf6fe0eb795124745d0f3",
     "url": "/SCH_Phoenixia_Festival/index.html"
   },
   {
