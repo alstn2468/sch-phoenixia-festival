@@ -18,7 +18,7 @@ const TimerContainer = styled.div`
 
 const TimerText = styled.div`
     font-size: 100px;
-    font-family: "Aldrich", sans-serif;
+    font-family: "Aldrich", sans-serif !important;
 
     @media screen and (max-width: 768px) {
         font-size: 30px;
