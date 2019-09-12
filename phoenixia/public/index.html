@@ -165,12 +165,11 @@
                 c.restore();
             }
         } 
-    </script>
-    <script>
+
         document.documentElement.addEventListener('touchstart', function (event) {
-        if (event.touches.length > 1) {
-        event.preventDefault();
-        }
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
         }, false);
     </script>
   </body>
