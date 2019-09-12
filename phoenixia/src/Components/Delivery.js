@@ -50,7 +50,6 @@ const Text = styled.h2`
 
 const DetailContainer = styled.div`
     display: flex;
-    border-radius: 10px;
     height: 600px;
     flex-direction: column;
     overflow: auto;
