@@ -1,6 +1,7 @@
 {
     "name": "phoenixia",
-    "version": "0.1.0",
+    "version": "0.1.1",
+    "homepage": "https://alstn2468.github.io/SCH_Phoenixia_Festival",
     "private": true,
     "dependencies": {
         "file-loader": "^4.2.0",
@@ -38,6 +39,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "homepage": "https://alstn2468.github.io/SCH_Phoenixia_Festival"
+    }
 }
