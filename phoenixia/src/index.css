@@ -1,4 +1,7 @@
 @font-face {
     font-family: "soonchunhyang";
-    src: local("soonchunhyang"), url("./assets/Fonts/soonchunhyang.ttf");
+    src: local("soonchunhyang"),
+        url("./assets/Fonts/soonchunhyang.ttf") format("truetype"),
+        url("./assets/Fonts/soonchunhyang.otf") format("opentype"),
+        url("./assets/Fonts/soonchunhyang.woff") format("woff");
 }
