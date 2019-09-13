@@ -83,12 +83,12 @@ const NameContainer = styled.div`
     display: inline-block;
     padding: 5px;
     border: 1px solid white;
-    width: 30%;
+    width: 35%;
     border-radius: 5px;
     margin-right: 5px;
 
     @media screen and (max-width: 768px) {
-        width: 45%;
+        width: 40%;
         margin-right: 2px;
     }
 `;
@@ -98,7 +98,7 @@ const NumberContainer = styled.div`
     border: 1px solid white;
     padding: 5px;
     border-radius: 5px;
-    width: 50%;
+    width: 45%;
 
     @media screen and (max-width: 768px) {
         width: 45%;
