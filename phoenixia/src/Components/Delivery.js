@@ -54,6 +54,7 @@ const DetailContainer = styled.div`
     flex-direction: column;
     align-items: center;
     overflow: auto;
+
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
         display: none !important;

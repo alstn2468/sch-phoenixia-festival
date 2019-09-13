@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 import FestivalTimer from "../../Components/FestivalTimer";
 import LineUp from "../../Components/LineUp";
 import Delivery from "../../Components/Delivery";
-import { BACKGROUND_COLOR } from "../../Constants/Colors";
 
 const Container = styled.div`
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 `;
 
 const FireWorksContainer = styled.canvas`
@@ -18,7 +18,6 @@ const FireWorksContainer = styled.canvas`
     height: 100vh;
     position: fixed;
     z-index: 0;
-    background-color: ${BACKGROUND_COLOR};
 `;
 
 const LocationContainer = styled.div`

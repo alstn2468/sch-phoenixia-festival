@@ -21,7 +21,7 @@ const TimerText = styled.div`
     font-family: "Aldrich", sans-serif !important;
 
     @media screen and (max-width: 768px) {
-        font-size: 30px;
+        font-size: 40px;
     }
 `;
 

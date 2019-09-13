@@ -11,6 +11,7 @@ const FooterContainer = styled.div`
     align-items: center;
     position: fixed;
     bottom: 0;
+    z-index: 1;
 
     @media screen and (max-width: 768px) {
         flex: 1;

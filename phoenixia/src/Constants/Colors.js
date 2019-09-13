@@ -1,4 +1,4 @@
-export const BACKGROUND_COLOR = "rgba(0, 0, 0, 0)";
+export const BACKGROUND_COLOR = "rgba(0,0,0,0)";
 export const BACKGROUND_COLOR_900 = "#263238";
 export const BACKGROUND_COLOR_800 = "#37474F";
 export const BACKGROUND_COLOR_700 = "#455A64";
