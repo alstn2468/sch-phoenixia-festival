@@ -28,8 +28,23 @@ const FooterText = styled.span`
     }
 `;
 
+const NameLinkText = styled.a`
+    font-size: 14px;
+    color: #d1d1d1;
+
+    @media screen and (max-width: 768px) {
+        font-size: 10px;
+    }
+`;
+
 export default () => (
     <FooterContainer>
-        <FooterText>Copyright 2019. Kim Min Su All rights reserved.</FooterText>
+        <FooterText>
+            Copyright 2019.{" "}
+            <NameLinkText href="https://github.com/alstn2468">
+                Kim Min Su
+            </NameLinkText>{" "}
+            All rights reserved.
+        </FooterText>
     </FooterContainer>
 );
