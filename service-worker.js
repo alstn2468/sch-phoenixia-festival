@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/SCH_Phoenixia_Festival/precache-manifest.712954b12b030794c512e8348e71bb54.js"
+  "/SCH_Phoenixia_Festival/precache-manifest.0bbe457efa3f6c56f0888a201fa72399.js"
 );
 
 self.addEventListener('message', (event) => {
