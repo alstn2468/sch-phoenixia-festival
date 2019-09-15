@@ -7,7 +7,7 @@ import {
     DAY_THR_TIMETABLE
 } from "../Constants/TimeTableData";
 
-const SwiperContainer = styled.div`
+const Container = styled.div`
     z-index: 1;
     width: 80%;
     overflow: auto;
@@ -39,7 +39,13 @@ const TimeTableTitle = styled.div`
     @media screen and (max-width: 768px) {
         width: 30%;
         font-size: 16px;
+        margin-bottom: 10px;
         margin-left: 5px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
 `;
 
@@ -54,6 +60,10 @@ const TimeTableContent = styled.div`
 
     @media screen and (max-width: 768px) {
         margin: 5px;
+    }
+
+    @media (min-width: 1200px) {
+        margin: 0px;
     }
 `;
 
@@ -87,7 +97,7 @@ const TimeTableContentText = styled.div`
 `;
 
 const TimeTable = ({ timetable }) => (
-    <SwiperContainer>
+    <Container>
         {timetable === 0 ? (
             <TimeTableContainer>
                 <TimeTableTitle>Day 1</TimeTableTitle>
@@ -103,7 +113,7 @@ const TimeTable = ({ timetable }) => (
         ) : timetable === 1 ? (
             <TimeTableContainer>
                 <TimeTableTitle>Day 2</TimeTableTitle>
-                {DAY_THR_TIMETABLE.map(data => (
+                {DAY_TWO_TIMETABLE.map(data => (
                     <TimeTableContent>
                         <TimeTableTimeText>{data.time}</TimeTableTimeText>
                         <TimeTableContentText>
@@ -115,7 +125,7 @@ const TimeTable = ({ timetable }) => (
         ) : (
             <TimeTableContainer>
                 <TimeTableTitle>Day 3</TimeTableTitle>
-                {DAY_ONE_TIMETABLE.map(data => (
+                {DAY_THR_TIMETABLE.map(data => (
                     <TimeTableContent>
                         <TimeTableTimeText>{data.time}</TimeTableTimeText>
                         <TimeTableContentText>
@@ -125,7 +135,7 @@ const TimeTable = ({ timetable }) => (
                 ))}
             </TimeTableContainer>
         )}
-    </SwiperContainer>
+    </Container>
 );
 
 TimeTable.propTypes = {

@@ -63,6 +63,10 @@ const DetailContainer = styled.div`
     @media screen and (max-width: 768px) {
         height: 180px;
     }
+
+    @media (min-width: 1200px) {
+        height: 450px;
+    }
 `;
 
 const DataContainer = styled.div`

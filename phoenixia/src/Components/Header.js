@@ -29,7 +29,7 @@ const HeaderContainer = styled.header`
 
 const HeaderTitleContainer = styled.div`
     display: flexbox;
-    flex: 3;
+    flex: 7;
     padding-left: 40px;
 
     @media screen and (max-width: 768px) {
@@ -54,7 +54,11 @@ const NavContainer = styled.div`
     align-items: center;
     justify-content: center;
     display: flexbox;
-    flex: 1;
+    flex: 3;
+
+    @media screen and (max-width: 768px) {
+        flex: 1;
+    }
 `;
 
 const NavItem = styled(AnchorLink)`
