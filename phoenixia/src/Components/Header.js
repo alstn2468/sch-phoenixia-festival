@@ -30,7 +30,7 @@ const HeaderContainer = styled.header`
 const HeaderTitleContainer = styled.div`
     display: flexbox;
     flex: 7;
-    padding-left: 40px;
+    padding-left: 60px;
 
     @media screen and (max-width: 768px) {
         flex: 1;
