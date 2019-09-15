@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 import FestivalTimer from "../../Components/FestivalTimer";
 import LineUp from "../../Components/LineUp";
 import Delivery from "../../Components/Delivery";
+import TimeTable from "../../Components/TimeTable";
 
 const Container = styled.div`
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
 `;
 
 const FireWorksContainer = styled.canvas`
@@ -18,10 +18,6 @@ const FireWorksContainer = styled.canvas`
     height: 100vh;
     position: fixed;
     z-index: 0;
-`;
-
-const LocationContainer = styled.div`
-    z-index: 1;
 `;
 
 const MainPresenter = ({ time, error }) => (
@@ -36,8 +32,8 @@ const MainPresenter = ({ time, error }) => (
         <Container id="Delivery">
             <Delivery />
         </Container>
-        <Container id="location">
-            <LocationContainer>Location</LocationContainer>
+        <Container id="timetable">
+            <TimeTable />
         </Container>
     </>
 );

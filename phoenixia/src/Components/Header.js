@@ -66,7 +66,7 @@ const NavItem = styled(AnchorLink)`
 `;
 
 const NavItemText = styled.span`
-    font-size: 18px;
+    font-size: 16px;
     :visited {
         color: ${TINT_COLOR};
     }
@@ -98,8 +98,8 @@ export default () => (
             <NavItem href="#Delivery">
                 <NavItemText>배달음식</NavItemText>
             </NavItem>
-            <NavItem href="#location">
-                <NavItemText>위치</NavItemText>
+            <NavItem href="#timetable">
+                <NavItemText>시간표</NavItemText>
             </NavItem>
         </NavContainer>
     </HeaderContainer>

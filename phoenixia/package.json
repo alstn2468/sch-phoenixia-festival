@@ -7,7 +7,6 @@
         "file-loader": "^4.2.0",
         "gh-pages": "^2.1.1",
         "prop-types": "^15.7.2",
-        "react": "^16.9.0",
         "react-anchor-link-smooth-scroll": "^1.0.12",
         "react-app-polyfill": "^1.0.2",
         "react-compound-timer": "^1.1.5",
@@ -16,7 +15,8 @@
         "react-scripts": "3.1.1",
         "react-scroll-up-button": "^1.6.4",
         "styled-components": "^4.3.2",
-        "styled-reset": "^4.0.0"
+        "styled-reset": "^4.0.0",
+        "swiper": "^4.5.1"
     },
     "scripts": {
         "start": "react-scripts start",

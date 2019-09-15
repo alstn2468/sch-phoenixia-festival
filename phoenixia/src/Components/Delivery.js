@@ -136,9 +136,13 @@ const Delivery = () => (
             </TextContainer>
             <DetailContainer>
                 {NearDeliveryData.map(data => (
-                    <DataContainer>
-                        <NameContainer>{data.name}</NameContainer>
-                        <NumberContainer>{data.number}</NumberContainer>
+                    <DataContainer key={data.name + data.number}>
+                        <NameContainer key={data.name}>
+                            {data.name}
+                        </NameContainer>
+                        <NumberContainer key={data.number}>
+                            {data.number}
+                        </NumberContainer>
                     </DataContainer>
                 ))}
             </DetailContainer>
@@ -149,9 +153,13 @@ const Delivery = () => (
             </TextContainer>
             <DetailContainer>
                 {FarDeliveryData.map(data => (
-                    <DataContainer>
-                        <NameContainer>{data.name}</NameContainer>
-                        <NumberContainer>{data.number}</NumberContainer>
+                    <DataContainer key={data.name + data.number}>
+                        <NameContainer key={data.name}>
+                            {data.name}
+                        </NameContainer>
+                        <NumberContainer key={data.number}>
+                            {data.number}
+                        </NumberContainer>
                     </DataContainer>
                 ))}
                 <WarningTitleContainer>주의사항</WarningTitleContainer>
