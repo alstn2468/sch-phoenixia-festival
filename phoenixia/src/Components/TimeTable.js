@@ -1,7 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { DAY_ONE_TIMETABLE } from "../Constants/TimeTableData";
+import {
+    DAY_ONE_TIMETABLE,
+    DAY_TWO_TIMETABLE,
+    DAY_THR_TIMETABLE
+} from "../Constants/TimeTableData";
 
 const SwiperContainer = styled.div`
     z-index: 1;
@@ -99,7 +103,7 @@ const TimeTable = ({ timetable }) => (
         ) : timetable === 1 ? (
             <TimeTableContainer>
                 <TimeTableTitle>Day 2</TimeTableTitle>
-                {DAY_ONE_TIMETABLE.map(data => (
+                {DAY_THR_TIMETABLE.map(data => (
                     <TimeTableContent>
                         <TimeTableTimeText>{data.time}</TimeTableTimeText>
                         <TimeTableContentText>

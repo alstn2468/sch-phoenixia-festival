@@ -30,7 +30,7 @@ export default class extends React.Component {
                     }
                     break;
                 default:
-                    timetable = 3;
+                    timetable = 0;
                     break;
             }
             this.setState({ time: festival - now.getTime(), timetable });
