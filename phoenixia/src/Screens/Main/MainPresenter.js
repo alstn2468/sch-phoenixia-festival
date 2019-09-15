@@ -20,7 +20,7 @@ const FireWorksContainer = styled.canvas`
     z-index: 0;
 `;
 
-const MainPresenter = ({ time, error }) => (
+const MainPresenter = ({ time, error, timetable }) => (
     <>
         <FireWorksContainer id="canvas" />
         <Container id="timer">
@@ -33,14 +33,15 @@ const MainPresenter = ({ time, error }) => (
             <Delivery />
         </Container>
         <Container id="timetable">
-            <TimeTable />
+            <TimeTable timetable={timetable} />
         </Container>
     </>
 );
 
 MainPresenter.propTypes = {
     time: PropTypes.number.isRequired,
-    error: PropTypes.string
+    error: PropTypes.string,
+    timetable: PropTypes.number.isRequired
 };
 
 export default MainPresenter;

@@ -4,7 +4,8 @@ import MainPresenter from "./MainPresenter";
 export default class extends React.Component {
     state = {
         time: 0,
-        error: null
+        error: null,
+        timetable: null
     };
 
     componentDidMount() {
@@ -13,7 +14,26 @@ export default class extends React.Component {
 
         try {
             let now = new Date();
-            this.setState({ time: festival - now.getTime() });
+            let month = now.getMonth() + 1;
+            let date = now.getDate();
+            let timetable;
+
+            switch (month) {
+                case 9:
+                    timetable = 0;
+                    break;
+                case 10:
+                    if (date === 1) {
+                        timetable = 1;
+                    } else {
+                        timetable = 2;
+                    }
+                    break;
+                default:
+                    timetable = 3;
+                    break;
+            }
+            this.setState({ time: festival - now.getTime(), timetable });
         } catch (e) {
             error = e;
             this.setState({ error });
@@ -22,8 +42,10 @@ export default class extends React.Component {
     }
 
     render() {
-        const { time, error } = this.state;
+        const { time, error, timetable } = this.state;
 
-        return <MainPresenter time={time} error={error} />;
+        return (
+            <MainPresenter time={time} error={error} timetable={timetable} />
+        );
     }
 }
