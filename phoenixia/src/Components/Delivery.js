@@ -64,7 +64,7 @@ const DetailContainer = styled.div`
         height: 180px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
         height: 450px;
     }
 `;

@@ -43,7 +43,7 @@ const TimeTableTitle = styled.div`
         margin-left: 5px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
         margin-left: 10px;
         margin-bottom: 10px;
     }
@@ -62,7 +62,7 @@ const TimeTableContent = styled.div`
         margin: 5px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1300px) {
         margin: 0px;
     }
 `;

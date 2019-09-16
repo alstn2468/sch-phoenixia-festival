@@ -30,11 +30,15 @@ const HeaderContainer = styled.header`
 const HeaderTitleContainer = styled.div`
     display: flexbox;
     flex: 7;
-    padding-left: 60px;
+    padding-left: 40px;
 
     @media screen and (max-width: 768px) {
         flex: 1;
         padding-left: 5px;
+    }
+
+    @media (min-width: 1300px) {
+        padding-left: 60px;
     }
 `;
 
