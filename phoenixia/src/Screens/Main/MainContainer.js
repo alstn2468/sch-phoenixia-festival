@@ -36,7 +36,6 @@ export default class extends React.Component {
 
     render() {
         const { time, error, timetable } = this.state;
-        console.log(this.state);
 
         return (
             <MainPresenter
