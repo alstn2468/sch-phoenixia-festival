@@ -20,7 +20,13 @@ const FireWorksContainer = styled.canvas`
     z-index: 0;
 `;
 
-const MainPresenter = ({ time, error, timetable }) => (
+const MainPresenter = ({
+    time,
+    error,
+    timetable,
+    leftButtonClick,
+    rightButtonClick
+}) => (
     <>
         <FireWorksContainer id="canvas" />
         <Container id="timer">
@@ -33,7 +39,11 @@ const MainPresenter = ({ time, error, timetable }) => (
             <Delivery />
         </Container>
         <Container id="timetable">
-            <TimeTable timetable={timetable} />
+            <TimeTable
+                timetable={timetable}
+                leftButtonClick={leftButtonClick}
+                rightButtonClick={rightButtonClick}
+            />
         </Container>
     </>
 );
@@ -41,7 +51,9 @@ const MainPresenter = ({ time, error, timetable }) => (
 MainPresenter.propTypes = {
     time: PropTypes.number.isRequired,
     error: PropTypes.string,
-    timetable: PropTypes.number.isRequired
+    timetable: PropTypes.number.isRequired,
+    leftButtonClick: PropTypes.func.isRequired,
+    rightButtonClick: PropTypes.func.isRequired
 };
 
 export default MainPresenter;

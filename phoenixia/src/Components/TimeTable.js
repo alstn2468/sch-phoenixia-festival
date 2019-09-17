@@ -6,24 +6,47 @@ import {
     DAY_TWO_TIMETABLE,
     DAY_THR_TIMETABLE
 } from "../Constants/TimeTableData";
+import { SCH_LOGO_COLOR_TWO } from "../Constants/Colors";
 
 const Container = styled.div`
     z-index: 1;
-    width: 80%;
-    overflow: auto;
-    margin: auto;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 `;
 
+const ButtonContainer = styled.div`
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        flex: 1;
+    }
+`;
+
+const ButtonContent = styled.button`
+    border: none;
+    font-size: 40px;
+    font-weight: 800;
+    :hover {
+        color: ${SCH_LOGO_COLOR_TWO};
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+`;
+
 const TimeTableContainer = styled.div`
     border: 1px solid white;
-    width: 80%;
+    flex: 7;
     padding: 10px;
 
     @media screen and (max-width: 768px) {
-        width: 100%;
+        flex: 8;
     }
 `;
 
@@ -96,8 +119,11 @@ const TimeTableContentText = styled.div`
     }
 `;
 
-const TimeTable = ({ timetable }) => (
+const TimeTable = ({ timetable, leftButtonClick, rightButtonClick }) => (
     <Container>
+        <ButtonContainer>
+            <ButtonContent onClick={leftButtonClick}>{"<"}</ButtonContent>
+        </ButtonContainer>
         {timetable === 0 ? (
             <TimeTableContainer>
                 <TimeTableTitle>Day 1</TimeTableTitle>
@@ -135,11 +161,16 @@ const TimeTable = ({ timetable }) => (
                 ))}
             </TimeTableContainer>
         )}
+        <ButtonContainer>
+            <ButtonContent onClick={rightButtonClick}>{">"}</ButtonContent>
+        </ButtonContainer>
     </Container>
 );
 
 TimeTable.propTypes = {
-    timetable: PropTypes.number.isRequired
+    timetable: PropTypes.number.isRequired,
+    leftButtonClick: PropTypes.func.isRequired,
+    rightButtonClick: PropTypes.func.isRequired
 };
 
 export default TimeTable;

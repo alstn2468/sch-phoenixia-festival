@@ -5,7 +5,19 @@ export default class extends React.Component {
     state = {
         time: 0,
         error: null,
-        timetable: null
+        timetable: 0
+    };
+
+    leftButtonClick = () => {
+        this.setState(state => ({
+            timetable: parseInt((state.timetable - 1 + 3) % 3)
+        }));
+    };
+
+    rightButtonClick = () => {
+        this.setState(state => ({
+            timetable: parseInt((state.timetable + 1) % 3)
+        }));
     };
 
     componentDidMount() {
@@ -14,26 +26,7 @@ export default class extends React.Component {
 
         try {
             let now = new Date();
-            let month = now.getMonth() + 1;
-            let date = now.getDate();
-            let timetable;
-
-            switch (month) {
-                case 9:
-                    timetable = 0;
-                    break;
-                case 10:
-                    if (date === 1) {
-                        timetable = 1;
-                    } else {
-                        timetable = 2;
-                    }
-                    break;
-                default:
-                    timetable = 0;
-                    break;
-            }
-            this.setState({ time: festival - now.getTime(), timetable });
+            this.setState({ time: festival - now.getTime() });
         } catch (e) {
             error = e;
             this.setState({ error });
@@ -43,9 +36,16 @@ export default class extends React.Component {
 
     render() {
         const { time, error, timetable } = this.state;
+        console.log(this.state);
 
         return (
-            <MainPresenter time={time} error={error} timetable={timetable} />
+            <MainPresenter
+                time={time}
+                error={error}
+                timetable={timetable}
+                leftButtonClick={this.leftButtonClick}
+                rightButtonClick={this.rightButtonClick}
+            />
         );
     }
 }
