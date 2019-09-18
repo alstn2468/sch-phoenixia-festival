@@ -11,9 +11,9 @@
 **ReactJS**를 사용해 구현한 **순천향대학교 축제(피닉시아)** 소개 홈페이지 입니다.<br>
 `PR`과 `ISSUE`는 언제나 환영입니다. ⭐️는 더 환영입니다. 😀😀😀
 
-## Demo Link
+## Page Link
 
-#### [DEMO](https://alstn2468.github.io/SCH_Phoenixia_Festival/#/)
+#### [바로가기](https://alstn2468.github.io/SCH_Phoenixia_Festival/#/)
 
 ## To Do List
 
