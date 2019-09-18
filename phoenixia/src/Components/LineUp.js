@@ -86,7 +86,8 @@ const LineUp = () => (
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_ONE}>
                 <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                <LineUpDetail path={MADCLOWN} name="매드클라운" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                {/* <LineUpDetail path={MADCLOWN} name="매드클라운" /> */}
             </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
@@ -94,8 +95,10 @@ const LineUp = () => (
                 <DayText>Day 2</DayText>
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_TWO}>
-                <LineUpDetail path={TENCM} name="10cm" />
-                <LineUpDetail path={KIMNY} name="김나영" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                {/* <LineUpDetail path={TENCM} name="10cm" />
+                <LineUpDetail path={KIMNY} name="김나영" /> */}
             </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
@@ -103,8 +106,10 @@ const LineUp = () => (
                 <DayText>Day 3</DayText>
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_THR}>
-                <LineUpDetail path={ZICO} name="지코" />
-                <LineUpDetail path={PENOMECO} name="페노메코" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
+                {/* <LineUpDetail path={ZICO} name="지코" />
+                <LineUpDetail path={PENOMECO} name="페노메코" /> */}
             </DetailContainer>
         </DayLineUpContainer>
     </LineUpContainer>

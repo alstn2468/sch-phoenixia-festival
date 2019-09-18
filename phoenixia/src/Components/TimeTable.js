@@ -4,7 +4,10 @@ import styled from "styled-components";
 import {
     DAY_ONE_TIMETABLE,
     DAY_TWO_TIMETABLE,
-    DAY_THR_TIMETABLE
+    DAY_THR_TIMETABLE,
+    STD_UNION_TIMETABLE,
+    PHOENIX_SQUARE_TIMETABLE,
+    COMMON_TIMETABLE
 } from "../Constants/TimeTableData";
 import { SCH_LOGO_COLOR_TWO } from "../Constants/Colors";
 
@@ -24,6 +27,10 @@ const ButtonContainer = styled.div`
 
     @media screen and (max-width: 768px) {
         flex: 1;
+    }
+
+    @media (min-width: 1300px) {
+        flex: 2.5;
     }
 `;
 
@@ -48,6 +55,11 @@ const TimeTableContainer = styled.div`
     @media screen and (max-width: 768px) {
         flex: 8;
     }
+
+    @media (min-width: 1300px) {
+        flex: 5;
+        padding: 5px;
+    }
 `;
 
 const TimeTableTitle = styled.div`
@@ -56,19 +68,39 @@ const TimeTableTitle = styled.div`
     font-weight: 600;
     padding: 10px 0px;
     border-bottom: 2px solid white;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 20px;
 
     @media screen and (max-width: 768px) {
+        padding: 5px 0px;
         width: 30%;
         font-size: 16px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+
+    @media (min-width: 1300px) {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+`;
+
+const LocationTitle = styled.div`
+    font-size: 18px;
+    padding: 10px 0px;
+    margin-left: 20px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
         margin-left: 5px;
     }
 
     @media (min-width: 1300px) {
         margin-left: 10px;
-        margin-bottom: 10px;
+        padding: 5px 0px;
+        font-size: 16px;
     }
 `;
 
@@ -79,15 +111,6 @@ const TimeTableContent = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 10px;
-
-    @media screen and (max-width: 768px) {
-        margin: 5px;
-    }
-
-    @media (min-width: 1300px) {
-        margin: 0px;
-    }
 `;
 
 const TimeTableTimeText = styled.div`
@@ -101,6 +124,10 @@ const TimeTableTimeText = styled.div`
         font-size: 10px;
         padding: 5px 5px;
         margin: 5px 0px;
+    }
+
+    @media (min-width: 1300px) {
+        font-size: 12px;
     }
 `;
 
@@ -117,6 +144,10 @@ const TimeTableContentText = styled.div`
         margin: 5px 0x;
         flex: 2;
     }
+
+    @media (min-width: 1300px) {
+        font-size: 12px;
+    }
 `;
 
 const TimeTable = ({ timetable, leftButtonClick, rightButtonClick }) => (
@@ -124,43 +155,65 @@ const TimeTable = ({ timetable, leftButtonClick, rightButtonClick }) => (
         <ButtonContainer>
             <ButtonContent onClick={leftButtonClick}>{"<"}</ButtonContent>
         </ButtonContainer>
-        {timetable === 0 ? (
-            <TimeTableContainer>
-                <TimeTableTitle>Day 1</TimeTableTitle>
-                {DAY_ONE_TIMETABLE.map(data => (
-                    <TimeTableContent>
-                        <TimeTableTimeText>{data.time}</TimeTableTimeText>
-                        <TimeTableContentText>
-                            {data.content}
-                        </TimeTableContentText>
-                    </TimeTableContent>
-                ))}
-            </TimeTableContainer>
-        ) : timetable === 1 ? (
-            <TimeTableContainer>
-                <TimeTableTitle>Day 2</TimeTableTitle>
-                {DAY_TWO_TIMETABLE.map(data => (
-                    <TimeTableContent>
-                        <TimeTableTimeText>{data.time}</TimeTableTimeText>
-                        <TimeTableContentText>
-                            {data.content}
-                        </TimeTableContentText>
-                    </TimeTableContent>
-                ))}
-            </TimeTableContainer>
-        ) : (
-            <TimeTableContainer>
-                <TimeTableTitle>Day 3</TimeTableTitle>
-                {DAY_THR_TIMETABLE.map(data => (
-                    <TimeTableContent>
-                        <TimeTableTimeText>{data.time}</TimeTableTimeText>
-                        <TimeTableContentText>
-                            {data.content}
-                        </TimeTableContentText>
-                    </TimeTableContent>
-                ))}
-            </TimeTableContainer>
-        )}
+        <TimeTableContainer>
+            <TimeTableTitle>Day {timetable + 1}</TimeTableTitle>
+            <LocationTitle>소운동장</LocationTitle>
+            {timetable === 0 ? (
+                <>
+                    {DAY_ONE_TIMETABLE.map(data => (
+                        <TimeTableContent>
+                            <TimeTableTimeText>{data.time}</TimeTableTimeText>
+                            <TimeTableContentText>
+                                {data.content}
+                            </TimeTableContentText>
+                        </TimeTableContent>
+                    ))}
+                </>
+            ) : timetable === 1 ? (
+                <>
+                    {DAY_TWO_TIMETABLE.map(data => (
+                        <TimeTableContent>
+                            <TimeTableTimeText>{data.time}</TimeTableTimeText>
+                            <TimeTableContentText>
+                                {data.content}
+                            </TimeTableContentText>
+                        </TimeTableContent>
+                    ))}
+                </>
+            ) : (
+                <>
+                    {DAY_THR_TIMETABLE.map(data => (
+                        <TimeTableContent>
+                            <TimeTableTimeText>{data.time}</TimeTableTimeText>
+                            <TimeTableContentText>
+                                {data.content}
+                            </TimeTableContentText>
+                        </TimeTableContent>
+                    ))}
+                </>
+            )}
+            <LocationTitle>학생회관</LocationTitle>
+            {STD_UNION_TIMETABLE.map(data => (
+                <TimeTableContent>
+                    <TimeTableTimeText>{data.time}</TimeTableTimeText>
+                    <TimeTableContentText>{data.content}</TimeTableContentText>
+                </TimeTableContent>
+            ))}
+            <LocationTitle>피닉스 광장</LocationTitle>
+            {PHOENIX_SQUARE_TIMETABLE.map(data => (
+                <TimeTableContent>
+                    <TimeTableTimeText>{data.time}</TimeTableTimeText>
+                    <TimeTableContentText>{data.content}</TimeTableContentText>
+                </TimeTableContent>
+            ))}
+            <LocationTitle>공통</LocationTitle>
+            {COMMON_TIMETABLE.map(data => (
+                <TimeTableContent>
+                    <TimeTableTimeText>{data.time}</TimeTableTimeText>
+                    <TimeTableContentText>{data.content}</TimeTableContentText>
+                </TimeTableContent>
+            ))}
+        </TimeTableContainer>
         <ButtonContainer>
             <ButtonContent onClick={rightButtonClick}>{">"}</ButtonContent>
         </ButtonContainer>
