@@ -92,7 +92,7 @@ const NameContainer = styled.div`
     margin-right: 5px;
 
     @media screen and (max-width: 768px) {
-        width: 40%;
+        width: 50%;
         margin-right: 2px;
     }
 `;
@@ -103,10 +103,6 @@ const NumberContainer = styled.div`
     padding: 5px;
     border-radius: 5px;
     width: 45%;
-
-    @media screen and (max-width: 768px) {
-        width: 45%;
-    }
 `;
 
 const WarningTitleContainer = styled.div`
