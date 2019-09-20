@@ -11,7 +11,7 @@ export const NearDeliveryData = [
     { name: "BBQ", number: "041-541-9982" },
     { name: "썬오브비앤피", number: "041-533-4666" },
     { name: "오구쌀피자", number: "041-549-5969" },
-    { name: "차정환피자", number: "041-547-2700" }
+    { name: "지정환피자", number: "041-547-2700" }
 ];
 
 export const FarDeliveryData = [
