@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3a9cce482dc0b2e6a5a9f5f2cda534ef",
+    "revision": "3059a7bfb7ff4decba6fe18df7f52cbf",
     "url": "/SCH_Phoenixia_Festival/index.html"
   },
   {
-    "revision": "8fd35d3ee5166e00832e",
+    "revision": "2fb534f7a3b7576c66b0",
     "url": "/SCH_Phoenixia_Festival/static/css/main.7b434d81.chunk.css"
   },
   {
-    "revision": "fd6e74a166efa59ad36c",
-    "url": "/SCH_Phoenixia_Festival/static/js/2.8791beab.chunk.js"
+    "revision": "3adfeb2e7e7d13d3e580",
+    "url": "/SCH_Phoenixia_Festival/static/js/2.653e2005.chunk.js"
   },
   {
-    "revision": "8fd35d3ee5166e00832e",
-    "url": "/SCH_Phoenixia_Festival/static/js/main.7246c9ba.chunk.js"
+    "revision": "2fb534f7a3b7576c66b0",
+    "url": "/SCH_Phoenixia_Festival/static/js/main.260673dc.chunk.js"
   },
   {
     "revision": "74b5e600afc236af6cd1",
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SCH_Phoenixia_Festival/static/media/KIMNY.2931e593.jpeg"
   },
   {
-    "revision": "52a724488c11e4d8ea8d6540a98a8809",
-    "url": "/SCH_Phoenixia_Festival/static/media/MADCLOWN.52a72448.jpg"
-  },
-  {
     "revision": "8120199098c3fffa51735c0567d4ada2",
     "url": "/SCH_Phoenixia_Festival/static/media/PENOMECO.81201990.jpg"
+  },
+  {
+    "revision": "84aa5befa6d66d86aa1a7afe0ebefbaf",
+    "url": "/SCH_Phoenixia_Festival/static/media/YANGDALL.84aa5bef.jpg"
   },
   {
     "revision": "bc567b440f9c7d57add1841f8b2d4211",
