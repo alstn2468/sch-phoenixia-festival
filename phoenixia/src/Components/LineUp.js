@@ -7,9 +7,9 @@ import {
 } from "../Constants/Colors";
 import LineUpDetail from "./LineUpDetail";
 import BOL4 from "../assets/Images/BOL4.jpeg";
+import YANGDALL from "../assets/Images/YANGDALL.jpg";
 import TENCM from "../assets/Images/10CM.jpg";
 import KIMNY from "../assets/Images/KIMNY.jpeg";
-import MADCLOWN from "../assets/Images/MADCLOWN.jpg";
 import ZICO from "../assets/Images/ZICO.jpeg";
 import PENOMECO from "../assets/Images/PENOMECO.jpg";
 
@@ -86,8 +86,7 @@ const LineUp = () => (
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_ONE}>
                 <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                {/* <LineUpDetail path={MADCLOWN} name="매드클라운" /> */}
+                <LineUpDetail path={YANGDALL} name="양다일" />
             </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
