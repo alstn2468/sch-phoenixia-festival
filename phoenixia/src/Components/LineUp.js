@@ -11,7 +11,7 @@ import YANGDALL from "../assets/Images/YANGDALL.jpg";
 import TENCM from "../assets/Images/10CM.jpg";
 import KIMNY from "../assets/Images/KIMNY.jpeg";
 import ZICO from "../assets/Images/ZICO.jpeg";
-import PENOMECO from "../assets/Images/PENOMECO.jpg";
+import DJJOEY from "../assets/Images/DJJOEY.jpg";
 
 const LineUpContainer = styled.div`
     display: flex;
@@ -85,8 +85,8 @@ const LineUp = () => (
                 <DayText>Day 1</DayText>
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_ONE}>
-                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
                 <LineUpDetail path={YANGDALL} name="양다일" />
+                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
             </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
@@ -94,10 +94,8 @@ const LineUp = () => (
                 <DayText>Day 2</DayText>
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_TWO}>
-                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                {/* <LineUpDetail path={TENCM} name="10cm" />
-                <LineUpDetail path={KIMNY} name="김나영" /> */}
+                <LineUpDetail path={TENCM} name="10cm" />
+                <LineUpDetail path={KIMNY} name="김나영" />
             </DetailContainer>
         </DayLineUpContainer>
         <DayLineUpContainer>
@@ -105,10 +103,8 @@ const LineUp = () => (
                 <DayText>Day 3</DayText>
             </DayTextContainer>
             <DetailContainer color={SCH_LOGO_COLOR_THR}>
-                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                <LineUpDetail path={BOL4} name="볼빨간 사춘기" />
-                {/* <LineUpDetail path={ZICO} name="지코" />
-                <LineUpDetail path={PENOMECO} name="페노메코" /> */}
+                <LineUpDetail path={DJJOEY} name="DJ JOEY" />
+                <LineUpDetail path={ZICO} name="지코" />
             </DetailContainer>
         </DayLineUpContainer>
     </LineUpContainer>
